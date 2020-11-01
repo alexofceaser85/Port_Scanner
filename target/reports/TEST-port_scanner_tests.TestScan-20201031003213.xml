@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201031003213" skipped="0" tests="1" time="0.259" timestamp="2020-10-31T00:32:14">
+	<testcase classname="port_scanner_tests.TestScan" name="test_scan_one_closed_port" time="0.259" timestamp="2020-10-31T00:32:14">
+		<failure message="{False, '2000'} != &lt;DictProxy object, typeid 'dict' at 0x7f2f818e4b00&gt;" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 26, in test_scan_one_closed_port
+    self.assertEquals({False, '2000'}, output)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {False, '2000'} != <DictProxy object, typeid 'dict' at 0x7f2f818e4b00>
+]]>		</failure>
+	</testcase>
+</testsuite>

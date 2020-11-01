@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="3" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201030223606" skipped="0" tests="3" time="0.012" timestamp="2020-10-30T22:36:07">
+	<testcase classname="port_scanner_tests.TestScan" name="test_end_port_of_none" time="0.005" timestamp="2020-10-30T22:36:07">
+		<error message="'NoneType' object cannot be interpreted as an integer" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 27, in test_end_port_of_none
+    output = port_scanner.scan('127.0.0.1', 2000, None)
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 68, in scan
+    for port in range(start_port, end_port):
+TypeError: 'NoneType' object cannot be interpreted as an integer
+]]>		</error>
+	</testcase>
+	<testcase classname="port_scanner_tests.TestScan" name="test_ip_address_of_none" time="0.004" timestamp="2020-10-30T22:36:07">
+		<error message="Can't pickle local object 'scan.&lt;locals&gt;.check_open_port'" type="AttributeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 17, in test_ip_address_of_none
+    output = port_scanner.scan(None, 2000, 3000)
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 70, in scan
+    port_scan_process.start()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 105, in start
+    self._popen = self._Popen(self)
+  File "/usr/lib/python3.6/multiprocessing/context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/usr/lib/python3.6/multiprocessing/context.py", line 284, in _Popen
+    return Popen(process_obj)
+  File "/usr/lib/python3.6/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/usr/lib/python3.6/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/usr/lib/python3.6/multiprocessing/popen_spawn_posix.py", line 47, in _launch
+    reduction.dump(process_obj, fp)
+  File "/usr/lib/python3.6/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+AttributeError: Can't pickle local object 'scan.<locals>.check_open_port'
+]]>		</error>
+	</testcase>
+	<testcase classname="port_scanner_tests.TestScan" name="test_start_port_of_none" time="0.003" timestamp="2020-10-30T22:36:07">
+		<error message="'NoneType' object cannot be interpreted as an integer" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 22, in test_start_port_of_none
+    output = port_scanner.scan('127.0.0.1', None, 3000)
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 68, in scan
+    for port in range(start_port, end_port):
+TypeError: 'NoneType' object cannot be interpreted as an integer
+]]>		</error>
+	</testcase>
+</testsuite>

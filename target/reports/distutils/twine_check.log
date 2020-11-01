@@ -1,0 +1,6 @@
+Checking /home/student/Documents/cs3280project3/target/dist/cs3280project3-1.0.dev0/dist/cs3280project3-1.0.dev0-py3-none-any.whl: PASSED, with warnings
+  warning: `long_description_content_type` missing. defaulting to `text/x-rst`.
+  warning: `long_description` missing.
+Checking /home/student/Documents/cs3280project3/target/dist/cs3280project3-1.0.dev0/dist/cs3280project3-1.0.dev0.tar.gz: PASSED, with warnings
+  warning: `long_description_content_type` missing. defaulting to `text/x-rst`.
+  warning: `long_description` missing.

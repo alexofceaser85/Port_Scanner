@@ -1,0 +1,21 @@
+WARNING: '.' not a valid package name; please use only .-separated package names in setup.py
+running clean
+'build/temp.linux-x86_64-3.6' does not exist -- can't clean it
+'build/lib' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-3.6' does not exist -- can't clean it
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+copying __init__.py -> build/lib
+copying port_scanner.py -> build/lib
+not copying port_scanner.py (output up-to-date)
+not copying __init__.py (output up-to-date)
+running build_scripts
+creating build/scripts-3.6
+warning: build_scripts: scripts/__init__.py is an empty file (skipping)
+
+copying and adjusting scripts/cs3280project3.py -> build/scripts-3.6
+error: [Errno 2] No such file or directory: 'build/scripts-3.6/__init__.py'

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201031132324" skipped="0" tests="1" time="0.007" timestamp="2020-10-31T13:23:24">
+	<testcase classname="port_scanner_tests.TestScan" name="test_scan_one_closed_port" time="0.007" timestamp="2020-10-31T13:23:24">
+		<error message="Can't pickle local object 'scan.&lt;locals&gt;.check_open_port'" type="AttributeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 18, in test_scan_one_closed_port
+    print(port_scanner.scan('127.0.0.1', 2000, 2001))
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 75, in scan
+    port_scan_process.start()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 105, in start
+    self._popen = self._Popen(self)
+  File "/usr/lib/python3.6/multiprocessing/context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/usr/lib/python3.6/multiprocessing/context.py", line 284, in _Popen
+    return Popen(process_obj)
+  File "/usr/lib/python3.6/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/usr/lib/python3.6/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/usr/lib/python3.6/multiprocessing/popen_spawn_posix.py", line 47, in _launch
+    reduction.dump(process_obj, fp)
+  File "/usr/lib/python3.6/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+AttributeError: Can't pickle local object 'scan.<locals>.check_open_port'
+]]>		</error>
+	</testcase>
+</testsuite>

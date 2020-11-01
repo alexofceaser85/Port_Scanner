@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201030224726" skipped="0" tests="1" time="0.004" timestamp="2020-10-30T22:47:26">
+	<testcase classname="port_scanner_tests.TestScan" name="test_scan_one_port" time="0.004" timestamp="2020-10-30T22:47:26">
+		<error message="local variable 'port_scan_process' referenced before assignment" type="UnboundLocalError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 17, in test_scan_one_port
+    output = port_scanner.scan('127.0.0.1', 2000, 2000)
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 71, in scan
+    port_scan_process.join()
+UnboundLocalError: local variable 'port_scan_process' referenced before assignment
+]]>		</error>
+	</testcase>
+</testsuite>

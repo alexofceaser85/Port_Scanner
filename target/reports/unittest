@@ -1,0 +1,28 @@
+
+Running tests...
+----------------------------------------------------------------------
+F
+======================================================================
+FAIL [0.266s]: test_scan_one_closed_port (port_scanner_tests.TestScan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 23, in test_scan_one_closed_port
+    self.assertEquals({'2000', False}, dict(output))
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {False, '2000'} != {}
+
+----------------------------------------------------------------------
+Ran 1 test in 0.300s
+
+FAILED (failures=1)
+
+Generating XML reports...

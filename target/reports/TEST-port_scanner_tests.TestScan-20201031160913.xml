@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201031160913" skipped="0" tests="1" time="0.005" timestamp="2020-10-31T16:09:13">
+	<testcase classname="port_scanner_tests.TestScan" name="test_scan_one_closed_port" time="0.005" timestamp="2020-10-31T16:09:13">
+		<error message="&lt;module 'multiprocessing' from '/usr/lib/python3.6/multiprocessing/__init__.py'&gt; does not have the attribute 'start'" type="AttributeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/usr/lib/python3.6/unittest/mock.py", line 1175, in patched
+    arg = patching.__enter__()
+  File "/usr/lib/python3.6/unittest/mock.py", line 1247, in __enter__
+    original, local = self.get_original()
+  File "/usr/lib/python3.6/unittest/mock.py", line 1221, in get_original
+    "%s does not have the attribute %r" % (target, name)
+AttributeError: <module 'multiprocessing' from '/usr/lib/python3.6/multiprocessing/__init__.py'> does not have the attribute 'start'
+]]>		</error>
+	</testcase>
+</testsuite>

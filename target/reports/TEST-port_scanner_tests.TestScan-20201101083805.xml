@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201101083805" skipped="0" tests="1" time="0.004" timestamp="2020-11-01T08:38:05">
+	<testcase classname="port_scanner_tests.TestScan" name="test_scan_one_closed_port" time="0.004" timestamp="2020-11-01T08:38:05">
+		<error message="name 'output' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 24, in test_scan_one_closed_port
+    self.assertTrue({'2000', False}, dict(output))
+NameError: name 'output' is not defined
+]]>		</error>
+	</testcase>
+</testsuite>

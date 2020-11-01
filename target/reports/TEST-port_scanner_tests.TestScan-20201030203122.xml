@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201030203122" skipped="0" tests="2" time="0.003" timestamp="2020-10-30T20:31:23">
+	<testcase classname="port_scanner_tests.TestScan" name="test_ip_address_of_none" time="0.002" timestamp="2020-10-30T20:31:23"/>
+	<testcase classname="port_scanner_tests.TestScan" name="test_start_port_of_none" time="0.002" timestamp="2020-10-30T20:31:23"/>
+</testsuite>

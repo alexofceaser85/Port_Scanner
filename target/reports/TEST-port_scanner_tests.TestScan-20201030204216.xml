@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201030204216" skipped="0" tests="3" time="0.008" timestamp="2020-10-30T20:42:17">
+	<testcase classname="port_scanner_tests.TestScan" name="test_ip_address_of_none" time="0.002" timestamp="2020-10-30T20:42:17"/>
+	<testcase classname="port_scanner_tests.TestScan" name="test_start_port_of_none" time="0.001" timestamp="2020-10-30T20:42:17"/>
+	<testcase classname="port_scanner_tests.TestScan" name="test_end_port_of_none" time="0.004" timestamp="2020-10-30T20:42:17">
+		<error message="'str' object cannot be interpreted as an integer" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 27, in test_end_port_of_none
+    output = port_scanner.scan('127.0.0.1', '2000', None)
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 57, in scan
+    for port in range(start_port, end_port):
+TypeError: 'str' object cannot be interpreted as an integer
+]]>		</error>
+	</testcase>
+</testsuite>

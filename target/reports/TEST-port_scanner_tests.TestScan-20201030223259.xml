@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="3" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201030223259" skipped="0" tests="3" time="0.010" timestamp="2020-10-30T22:33:00">
+	<testcase classname="port_scanner_tests.TestScan" name="test_end_port_of_none" time="0.005" timestamp="2020-10-30T22:33:00">
+		<error message="'str' object cannot be interpreted as an integer" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 27, in test_end_port_of_none
+    output = port_scanner.scan('127.0.0.1', '2000', None)
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 68, in scan
+    for port in range(start_port, end_port):
+TypeError: 'str' object cannot be interpreted as an integer
+]]>		</error>
+	</testcase>
+	<testcase classname="port_scanner_tests.TestScan" name="test_ip_address_of_none" time="0.003" timestamp="2020-10-30T22:33:00">
+		<error message="'str' object cannot be interpreted as an integer" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 17, in test_ip_address_of_none
+    output = port_scanner.scan(None, '2000', '3000')
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 68, in scan
+    for port in range(start_port, end_port):
+TypeError: 'str' object cannot be interpreted as an integer
+]]>		</error>
+	</testcase>
+	<testcase classname="port_scanner_tests.TestScan" name="test_start_port_of_none" time="0.003" timestamp="2020-10-30T22:33:00">
+		<error message="'NoneType' object cannot be interpreted as an integer" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 22, in test_start_port_of_none
+    output = port_scanner.scan('127.0.0.1', None, '3000')
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 68, in scan
+    for port in range(start_port, end_port):
+TypeError: 'NoneType' object cannot be interpreted as an integer
+]]>		</error>
+	</testcase>
+</testsuite>

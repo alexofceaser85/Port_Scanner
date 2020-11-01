@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201026234922" skipped="0" tests="2" time="0.016" timestamp="2020-10-26T23:49:23">
+	<testcase classname="port_scanner_tests.TestScan" name="test_ip_address_of_none" time="0.001" timestamp="2020-10-26T23:49:23"/>
+	<testcase classname="port_scanner_tests.TestScan" name="test_start_port_of_none" time="0.015" timestamp="2020-10-26T23:49:23">
+		<error message="assertEqual() missing 1 required positional argument: 'second'" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 23, in test_start_port_of_none
+    self.assertEquals('Please include a starting port')
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+TypeError: assertEqual() missing 1 required positional argument: 'second'
+]]>		</error>
+	</testcase>
+</testsuite>

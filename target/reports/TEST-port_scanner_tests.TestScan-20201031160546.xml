@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="port_scanner_tests.py" name="port_scanner_tests.TestScan-20201031160546" skipped="0" tests="1" time="0.005" timestamp="2020-10-31T16:05:47">
+	<testcase classname="port_scanner_tests.TestScan" name="test_scan_one_closed_port" time="0.005" timestamp="2020-10-31T16:05:47">
+		<error message="scan() got an unexpected keyword argument 'target'" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/usr/lib/python3.6/unittest/mock.py", line 1183, in patched
+    return func(*args, **keywargs)
+  File "/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py", line 48, in test_scan_one_closed_port
+    output = port_scanner.scan('127.0.0.1', 2000, 2001)
+  File "/home/student/Documents/cs3280project3/src/main/python/port_scanner.py", line 74, in scan
+    port_scan_process = multiprocessing.Process(target=check_open_port, args=(ip_address, port))
+TypeError: scan() got an unexpected keyword argument 'target'
+]]>		</error>
+	</testcase>
+</testsuite>

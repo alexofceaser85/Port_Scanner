@@ -1,0 +1,5 @@
+Processing /home/student/.cache/pip/wheels/00/5b/d2/177e69ba7fc46191165651812a44f421f1c698eb41d9d54f6a/mockito-1.2.2-py3-none-any.whl
+Installing collected packages: mockito
+Successfully installed mockito-1.2.2
+WARNING: You are using pip version 20.2.2; however, version 20.2.4 is available.
+You should consider upgrading via the '/home/student/Documents/cs3280project3/target/venv/build/cpython-3.6.9.final.0/bin/python3 -m pip install --upgrade pip' command.

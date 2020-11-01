@@ -1,0 +1,10 @@
+{
+  "errors": [],
+  "failures": [
+    {
+      "test": "port_scanner_tests.TestScan.test_scan_one_closed_port",
+      "traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.6/unittest/case.py\", line 59, in testPartExecutor\n    yield\n  File \"/usr/lib/python3.6/unittest/case.py\", line 605, in run\n    testMethod()\n  File \"/home/student/Documents/cs3280project3/src/unittest/python/port_scanner_tests.py\", line 23, in test_scan_one_closed_port\n    self.assertEquals({'2000', False}, dict(output))\n  File \"/usr/lib/python3.6/unittest/case.py\", line 1321, in deprecated_func\n    return original_func(*args, **kwargs)\n  File \"/usr/lib/python3.6/unittest/case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"/usr/lib/python3.6/unittest/case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\nAssertionError: {False, '2000'} != {}\n"
+    }
+  ],
+  "tests-run": 1
+}
