@@ -3,7 +3,7 @@ Running tests...
 ----------------------------------------------------------------------
 F
 ======================================================================
-FAIL [0.266s]: test_scan_one_closed_port (port_scanner_tests.TestScan)
+FAIL [0.261s]: test_scan_one_closed_port (port_scanner_tests.TestScan)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -21,7 +21,7 @@ Traceback (most recent call last):
 AssertionError: {False, '2000'} != {}
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.300s
+Ran 1 test in 0.283s
 
 FAILED (failures=1)
 

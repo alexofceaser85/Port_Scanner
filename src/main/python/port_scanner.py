@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """
 This script scans the ports of a network and returns which ports are open and which are closed
 """
@@ -50,7 +49,7 @@ def scan(ip_address, start_port, end_port):
         port_scan_process.start()
     
     for process in list_of_processes:
-        port_scan_process.join()
+        process.join()
     
     return ports
 
