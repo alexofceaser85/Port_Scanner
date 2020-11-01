@@ -1,6 +1,5 @@
 WARNING: '.' not a valid package name; please use only .-separated package names in setup.py
 running clean
-'build/temp.linux-x86_64-3.6' does not exist -- can't clean it
 'build/lib' does not exist -- can't clean it
 'build/bdist.linux-x86_64' does not exist -- can't clean it
 'build/scripts-3.6' does not exist -- can't clean it
@@ -10,12 +9,38 @@ running build_py
 creating build
 creating build/lib
 copying __init__.py -> build/lib
-copying port_scanner.py -> build/lib
-not copying port_scanner.py (output up-to-date)
-not copying __init__.py (output up-to-date)
 running build_scripts
 creating build/scripts-3.6
-warning: build_scripts: scripts/__init__.py is an empty file (skipping)
-
 copying and adjusting scripts/cs3280project3.py -> build/scripts-3.6
-error: [Errno 2] No such file or directory: 'build/scripts-3.6/__init__.py'
+changing mode of build/scripts-3.6/cs3280project3.py from 644 to 755
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+copying build/lib/__init__.py -> build/bdist.linux-x86_64/wheel
+running install_egg_info
+running egg_info
+writing cs3280project3.egg-info/PKG-INFO
+writing dependency_links to cs3280project3.egg-info/dependency_links.txt
+writing namespace_packages to cs3280project3.egg-info/namespace_packages.txt
+writing top-level names to cs3280project3.egg-info/top_level.txt
+reading manifest file 'cs3280project3.egg-info/SOURCES.txt'
+writing manifest file 'cs3280project3.egg-info/SOURCES.txt'
+Copying cs3280project3.egg-info to build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0-py3.6.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0.data
+creating build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0.data/scripts
+copying build/scripts-3.6/cs3280project3.py -> build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0.data/scripts
+changing mode of build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0.data/scripts/cs3280project3.py to 755
+creating build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0.dist-info/WHEEL
+creating 'dist/cs3280project3-1.0.dev0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding '__init__.py'
+adding 'cs3280project3-1.0.dev0.data/scripts/cs3280project3.py'
+adding 'cs3280project3-1.0.dev0.dist-info/METADATA'
+adding 'cs3280project3-1.0.dev0.dist-info/WHEEL'
+adding 'cs3280project3-1.0.dev0.dist-info/namespace_packages.txt'
+adding 'cs3280project3-1.0.dev0.dist-info/top_level.txt'
+adding 'cs3280project3-1.0.dev0.dist-info/zip-safe'
+adding 'cs3280project3-1.0.dev0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel

@@ -41,16 +41,10 @@ if __name__ == '__main__':
         url = '',
         project_urls = {},
 
-        scripts = [
-            'scripts/__init__.py',
-            'scripts/cs3280project3.py'
-        ],
+        scripts = ['scripts/cs3280project3.py'],
         packages = ['.'],
         namespace_packages = [],
-        py_modules = [
-            '__init__',
-            'port_scanner'
-        ],
+        py_modules = ['__init__'],
         entry_points = {},
         data_files = [],
         package_data = {},

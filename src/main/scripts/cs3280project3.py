@@ -3,14 +3,12 @@
 """
 This is the main method for the port scanner
 """
-
 import socket
 import sys
 import multiprocessing
 
 MANAGER = multiprocessing.Manager()
 PORTS = MANAGER.dict()
-
 __author__ = 'Alex DeCesare'
 __version__ = '30-October-2020'
 
@@ -106,8 +104,8 @@ def handle_scan_connection(connection):
         connection.send(scanned_ports)
     else:
         connection.send(None)
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     PARENT_CONNECTION, CHILD_CONNECTION = multiprocessing.Pipe()
     PROCESSES = multiprocessing.Process(target=handle_scan_connection, args=(CHILD_CONNECTION, ))
     PROCESSES.start()
