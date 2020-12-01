@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="scan_utils_tests.py" name="scan_utils_tests.TestCheckOpenPort-20201130182820" skipped="0" tests="2" time="0.260" timestamp="2020-11-30T18:28:20">
+	<testcase classname="scan_utils_tests.TestCheckOpenPort" name="test_check_closed_port" time="0.002" timestamp="2020-11-30T18:28:20"/>
+	<testcase classname="scan_utils_tests.TestCheckOpenPort" name="test_check_open_port" time="0.258" timestamp="2020-11-30T18:28:20">
+		<failure message="None is not true" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 38, in test_check_open_port
+    self.assertTrue(is_open)
+  File "/usr/lib/python3.6/unittest/case.py", line 682, in assertTrue
+    raise self.failureException(msg)
+AssertionError: None is not true
+]]>		</failure>
+	</testcase>
+</testsuite>

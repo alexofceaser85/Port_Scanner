@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="scan_utils_tests.py" name="scan_utils_tests.TestScanUtils-20201201115130" skipped="0" tests="5" time="6.219" timestamp="2020-12-01T11:51:44">
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_all_closed" time="1.663" timestamp="2020-12-01T11:51:39"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_all_open" time="1.177" timestamp="2020-12-01T11:51:40"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_some_open" time="1.692" timestamp="2020-12-01T11:51:42"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_closed" time="0.851" timestamp="2020-12-01T11:51:43"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_open" time="0.836" timestamp="2020-12-01T11:51:44"/>
+</testsuite>

@@ -44,7 +44,10 @@ if __name__ == '__main__':
         scripts = ['scripts/cs3280project3.py'],
         packages = ['.'],
         namespace_packages = [],
-        py_modules = ['__init__'],
+        py_modules = [
+            '__init__',
+            'scan_utils'
+        ],
         entry_points = {},
         data_files = [],
         package_data = {},

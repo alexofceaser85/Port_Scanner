@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="scan_utils_tests.py" name="scan_utils_tests.TestCheckOpenPort-20201130182544" skipped="0" tests="2" time="0.312" timestamp="2020-11-30T18:25:44">
+	<testcase classname="scan_utils_tests.TestCheckOpenPort" name="test_check_closed_port" time="0.003" timestamp="2020-11-30T18:25:44"/>
+	<testcase classname="scan_utils_tests.TestCheckOpenPort" name="test_check_open_port" time="0.309" timestamp="2020-11-30T18:25:44">
+		<failure message="&lt;DictProxy object, typeid 'dict' at 0x7f41beaa1160&gt; != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 34, in test_check_open_port
+    self.assertEqual(test_dictionary, is_open)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: <DictProxy object, typeid 'dict' at 0x7f41beaa1160> != None
+]]>		</failure>
+	</testcase>
+</testsuite>

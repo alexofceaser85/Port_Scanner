@@ -10,9 +10,53 @@
       "module": "__init__",
       "sum_lines": 0,
       "sum_lines_not_covered": 0
+    },
+    {
+      "branches": 8,
+      "branches_missing": 2,
+      "branches_partial": 0,
+      "coverage": 85.18518518518519,
+      "lines": [
+        2,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        23,
+        25,
+        31,
+        32,
+        34,
+        36,
+        38,
+        39,
+        40,
+        42,
+        43,
+        45,
+        47,
+        54,
+        55,
+        56,
+        58
+      ],
+      "lines_not_covered": [
+        54,
+        55,
+        56,
+        58
+      ],
+      "module": "scan_utils",
+      "sum_lines": 27,
+      "sum_lines_not_covered": 4
     }
   ],
-  "overall_branch_coverage": 100,
-  "overall_branch_partial_coverage": 100,
-  "overall_coverage": 100
+  "overall_branch_coverage": 75.0,
+  "overall_branch_partial_coverage": 100.0,
+  "overall_coverage": 85.18518518518519
 }

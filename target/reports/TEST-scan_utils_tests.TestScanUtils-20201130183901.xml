@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="scan_utils_tests.py" name="scan_utils_tests.TestScanUtils-20201130183901" skipped="0" tests="2" time="1.592" timestamp="2020-11-30T18:39:03">
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_closed" time="0.799" timestamp="2020-11-30T18:39:03"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_open" time="0.793" timestamp="2020-11-30T18:39:03"/>
+</testsuite>

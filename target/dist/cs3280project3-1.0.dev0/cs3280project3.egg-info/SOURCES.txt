@@ -1,4 +1,5 @@
 __init__.py
+scan_utils.py
 setup.py
 cs3280project3.egg-info/PKG-INFO
 cs3280project3.egg-info/SOURCES.txt

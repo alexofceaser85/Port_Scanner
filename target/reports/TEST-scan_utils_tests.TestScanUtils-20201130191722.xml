@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="scan_utils_tests.py" name="scan_utils_tests.TestScanUtils-20201130191722" skipped="0" tests="5" time="5.682" timestamp="2020-11-30T19:17:28">
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_all_closed" time="1.533" timestamp="2020-11-30T19:17:24"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_some_open" time="1.556" timestamp="2020-11-30T19:17:27"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_closed" time="0.794" timestamp="2020-11-30T19:17:27"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_open" time="0.783" timestamp="2020-11-30T19:17:28"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_all_open" time="1.017" timestamp="2020-11-30T19:17:25">
+		<failure message="{'3280': True, '3281': True, '3282': True, '3283': True, '3284': True} != {'3280': True, '3284': False, '3281': False, '3283': False, '3282': False}
+- {'3280': True, '3281': True, '3282': True, '3283': True, '3284': True}
+?                        ^^^           ^^^           ^^^           ^^^
+
++ {'3280': True, '3281': False, '3282': False, '3283': False, '3284': False}
+?                        ^^^^           ^^^^           ^^^^           ^^^^
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 80, in test_scan_many_ports_all_open
+    self.assertEqual(test_dictionary, scanned_dictionary)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 1121, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.6/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: {'3280': True, '3281': True, '3282': True, '3283': True, '3284': True} != {'3280': True, '3284': False, '3281': False, '3283': False, '3282': False}
+- {'3280': True, '3281': True, '3282': True, '3283': True, '3284': True}
+?                        ^^^           ^^^           ^^^           ^^^
+
++ {'3280': True, '3281': False, '3282': False, '3283': False, '3284': False}
+?                        ^^^^           ^^^^           ^^^^           ^^^^
+
+]]>		</failure>
+	</testcase>
+</testsuite>

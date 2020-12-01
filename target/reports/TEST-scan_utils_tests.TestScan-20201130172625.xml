@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="scan_utils_tests.py" name="scan_utils_tests.TestScan-20201130172625" skipped="0" tests="1" time="0.929" timestamp="2020-11-30T17:26:26">
+	<testcase classname="scan_utils_tests.TestScan" name="test" time="0.929" timestamp="2020-11-30T17:26:26"/>
+</testsuite>

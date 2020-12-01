@@ -17,7 +17,7 @@
 <div id="header">
     <div class="content">
         <h1>Python unit test coverage:
-            <span class="pc_cov">100%</span>
+            <span class="pc_cov">83%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <form id="filter_container">
@@ -34,6 +34,8 @@
         <span class="key">s</span>
         <span class="key">m</span>
         <span class="key">x</span>
+        <span class="key">b</span>
+        <span class="key">p</span>
         <span class="key">c</span> &nbsp; change column sorting
     </p>
     </div>
@@ -46,16 +48,20 @@
                 <th class="shortkey_s">statements</th>
                 <th class="shortkey_m">missing</th>
                 <th class="shortkey_x">excluded</th>
+                <th class="shortkey_b">branches</th>
+                <th class="shortkey_p">partial</th>
                 <th class="right shortkey_c">coverage</th>
             </tr>
         </thead>
         <tfoot>
             <tr class="total">
                 <td class="name left">Total</td>
+                <td>27</td>
+                <td>4</td>
                 <td>0</td>
+                <td>8</td>
                 <td>0</td>
-                <td>0</td>
-                <td class="right" data-ratio="0 0">100%</td>
+                <td class="right" data-ratio="29 35">83%</td>
             </tr>
         </tfoot>
         <tbody>
@@ -64,7 +70,18 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
+                <td>0</td>
+                <td>0</td>
                 <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_scan_utils_py.html">/scan_utils.py</a></td>
+                <td>27</td>
+                <td>4</td>
+                <td>0</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="29 35">83%</td>
             </tr>
         </tbody>
     </table>
@@ -76,7 +93,7 @@
     <div class="content">
         <p>
             <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.3</a>,
-            created at 2020-11-01 16:03 -0500
+            created at 2020-12-01 11:51 -0500
         </p>
     </div>
 </div>

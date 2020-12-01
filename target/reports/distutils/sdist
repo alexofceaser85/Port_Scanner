@@ -1,5 +1,6 @@
 WARNING: '.' not a valid package name; please use only .-separated package names in setup.py
 running clean
+'build/temp.linux-x86_64-3.6' does not exist -- can't clean it
 'build/lib' does not exist -- can't clean it
 'build/bdist.linux-x86_64' does not exist -- can't clean it
 'build/scripts-3.6' does not exist -- can't clean it
@@ -11,6 +12,7 @@ writing dependency_links to cs3280project3.egg-info/dependency_links.txt
 writing namespace_packages to cs3280project3.egg-info/namespace_packages.txt
 writing top-level names to cs3280project3.egg-info/top_level.txt
 writing manifest file 'cs3280project3.egg-info/SOURCES.txt'
+'license_file' option was not specified
 reading manifest file 'cs3280project3.egg-info/SOURCES.txt'
 writing manifest file 'cs3280project3.egg-info/SOURCES.txt'
 warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
@@ -25,6 +27,7 @@ creating cs3280project3-1.0.dev0/cs3280project3.egg-info
 creating cs3280project3-1.0.dev0/scripts
 copying files to cs3280project3-1.0.dev0...
 copying __init__.py -> cs3280project3-1.0.dev0
+copying scan_utils.py -> cs3280project3-1.0.dev0
 copying setup.py -> cs3280project3-1.0.dev0
 copying cs3280project3.egg-info/PKG-INFO -> cs3280project3-1.0.dev0/cs3280project3.egg-info
 copying cs3280project3.egg-info/SOURCES.txt -> cs3280project3-1.0.dev0/cs3280project3.egg-info
@@ -33,6 +36,11 @@ copying cs3280project3.egg-info/namespace_packages.txt -> cs3280project3-1.0.dev
 copying cs3280project3.egg-info/top_level.txt -> cs3280project3-1.0.dev0/cs3280project3.egg-info
 copying cs3280project3.egg-info/zip-safe -> cs3280project3-1.0.dev0/cs3280project3.egg-info
 copying scripts/cs3280project3.py -> cs3280project3-1.0.dev0/scripts
+not copying cs3280project3.egg-info/SOURCES.txt (output up-to-date)
+Reading configuration from cs3280project3-1.0.dev0/setup.cfg
+Adding new section [egg_info] to cs3280project3-1.0.dev0/setup.cfg
+Setting egg_info.tag_build to '' in cs3280project3-1.0.dev0/setup.cfg
+Setting egg_info.tag_date to 0 in cs3280project3-1.0.dev0/setup.cfg
 Writing cs3280project3-1.0.dev0/setup.cfg
 creating dist
 Creating tar archive

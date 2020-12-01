@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="scan_utils_tests.py" name="scan_utils_tests.TestCheckOpenPort-20201130182309" skipped="0" tests="2" time="0.011" timestamp="2020-11-30T18:23:09">
+	<testcase classname="scan_utils_tests.TestCheckOpenPort" name="test_check_closed_port" time="0.003" timestamp="2020-11-30T18:23:09"/>
+	<testcase classname="scan_utils_tests.TestCheckOpenPort" name="test_check_open_port" time="0.008" timestamp="2020-11-30T18:23:09">
+		<error message="name 'test_manager' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 30, in test_check_open_port
+    test_dictionary = test_manager.dict({'3280' : True})
+NameError: name 'test_manager' is not defined
+]]>		</error>
+	</testcase>
+</testsuite>

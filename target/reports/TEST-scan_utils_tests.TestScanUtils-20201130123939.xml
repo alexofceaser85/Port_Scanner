@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="scan_utils_tests.py" name="scan_utils_tests.TestScanUtils-20201130123939" skipped="0" tests="1" time="0.262" timestamp="2020-11-30T12:39:39">
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test" time="0.262" timestamp="2020-11-30T12:39:39">
+		<error message="must be str, not SyncManager" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 19, in test
+    print('test manager' + test_manager)
+TypeError: must be str, not SyncManager
+]]>		</error>
+	</testcase>
+</testsuite>

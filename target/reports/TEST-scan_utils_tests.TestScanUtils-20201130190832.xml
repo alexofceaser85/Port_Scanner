@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="2" file="scan_utils_tests.py" name="scan_utils_tests.TestScanUtils-20201130190832" skipped="0" tests="5" time="6.784" timestamp="2020-11-30T19:08:40">
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_all_closed" time="1.800" timestamp="2020-11-30T19:08:35"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_closed" time="0.817" timestamp="2020-11-30T19:08:39"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_open" time="0.844" timestamp="2020-11-30T19:08:40"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_all_open" time="1.671" timestamp="2020-11-30T19:08:37">
+		<failure message="{'3280': True, '3281': True, '3282': True, '32[89 chars]True} != {'3282': False, '3284': False, '3280': False, [99 chars]alse}
+Diff is 680 characters long. Set self.maxDiff to None to see it." type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 74, in test_scan_many_ports_all_open
+    self.assertEqual(test_dictionary, scanned_dictionary)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 1121, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.6/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: {'3280': True, '3281': True, '3282': True, '32[89 chars]True} != {'3282': False, '3284': False, '3280': False, [99 chars]alse}
+Diff is 680 characters long. Set self.maxDiff to None to see it.
+]]>		</failure>
+	</testcase>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_some_open" time="1.652" timestamp="2020-11-30T19:08:38">
+		<failure message="{'3280': True, '3281': False, '3282': False, '[96 chars]True} != {'3284': False, '3282': False, '3280': False, [98 chars]True}
+- {'3280': True,
+?          ^^^
+
++ {'3280': False,
+?          ^^^^
+
+   '3281': False,
+   '3282': False,
+   '3283': False,
+   '3284': False,
+-  '3285': True,
+?          ^^^
+
++  '3285': False,
+?          ^^^^
+
+   '3286': False,
+   '3287': False,
+   '3288': False,
+   '3289': True}" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 86, in test_scan_many_ports_some_open
+    self.assertEqual(test_dictionary, scanned_dictionary)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 1121, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.6/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: {'3280': True, '3281': False, '3282': False, '[96 chars]True} != {'3284': False, '3282': False, '3280': False, [98 chars]True}
+- {'3280': True,
+?          ^^^
+
++ {'3280': False,
+?          ^^^^
+
+   '3281': False,
+   '3282': False,
+   '3283': False,
+   '3284': False,
+-  '3285': True,
+?          ^^^
+
++  '3285': False,
+?          ^^^^
+
+   '3286': False,
+   '3287': False,
+   '3288': False,
+   '3289': True}
+]]>		</failure>
+	</testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="scan_utils_tests.py" name="scan_utils_tests.TestHandleScanConnection-20201201114928" skipped="0" tests="6" time="6.374" timestamp="2020-12-01T11:49:35">
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_many_closed_ports" time="1.689" timestamp="2020-12-01T11:49:30"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_many_open_ports" time="1.104" timestamp="2020-12-01T11:49:31"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_one_closed_port" time="0.821" timestamp="2020-12-01T11:49:32"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_one_open_port" time="0.824" timestamp="2020-12-01T11:49:33"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_some_open_ports" time="1.673" timestamp="2020-12-01T11:49:35"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_should_not_scan_ports_of_type_none" time="0.263" timestamp="2020-12-01T11:49:35"/>
+</testsuite>

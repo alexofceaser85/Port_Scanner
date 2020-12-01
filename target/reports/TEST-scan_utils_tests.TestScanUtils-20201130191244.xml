@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="1" file="scan_utils_tests.py" name="scan_utils_tests.TestScanUtils-20201130191244" skipped="0" tests="5" time="4.634" timestamp="2020-11-30T19:12:50">
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_all_closed" time="1.536" timestamp="2020-11-30T19:12:47"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_closed" time="0.780" timestamp="2020-11-30T19:12:49"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_one_port_all_open" time="0.777" timestamp="2020-11-30T19:12:50"/>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_some_open" time="1.538" timestamp="2020-11-30T19:12:48">
+		<failure message="{'3280': True, '3281': False, '3282': False, '3283[92 chars]True} != {'3280': False, '3287': False, '3282': False, '328[94 chars]True}
+- {'3280': True,
+?          ^^^
+
++ {'3280': False,
+?          ^^^^
+
+   '3281': False,
+   '3282': False,
+   '3283': False,
+   '3284': False,
+-  '3285': True,
+?          ^^^
+
++  '3285': False,
+?          ^^^^
+
+   '3286': False,
+   '3287': False,
+   '3288': False,
+   '3289': True}" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 87, in test_scan_many_ports_some_open
+    self.assertEqual(test_dictionary, scanned_dictionary)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 1121, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.6/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: {'3280': True, '3281': False, '3282': False, '3283[92 chars]True} != {'3280': False, '3287': False, '3282': False, '328[94 chars]True}
+- {'3280': True,
+?          ^^^
+
++ {'3280': False,
+?          ^^^^
+
+   '3281': False,
+   '3282': False,
+   '3283': False,
+   '3284': False,
+-  '3285': True,
+?          ^^^
+
++  '3285': False,
+?          ^^^^
+
+   '3286': False,
+   '3287': False,
+   '3288': False,
+   '3289': True}
+]]>		</failure>
+	</testcase>
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test_scan_many_ports_all_open" time="0.004" timestamp="2020-11-30T19:12:47">
+		<error message="'NoneType' object has no attribute 'listen'" type="AttributeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 68, in test_scan_many_ports_all_open
+    first_socket.listen(1)
+AttributeError: 'NoneType' object has no attribute 'listen'
+]]>		</error>
+	</testcase>
+</testsuite>

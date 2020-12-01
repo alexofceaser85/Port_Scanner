@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="scan_utils_tests.py" name="scan_utils_tests.TestScanUtils-20201130124033" skipped="0" tests="1" time="0.553" timestamp="2020-11-30T12:40:34">
+	<testcase classname="scan_utils_tests.TestScanUtils" name="test" time="0.553" timestamp="2020-11-30T12:40:34">
+		<failure message="{'3280': False} != {}
+- {'3280': False}
++ {}" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project3/src/unittest/python/scan_utils_tests.py", line 23, in test
+    self.assertEqual(test_dictionary, scanned_dictionary)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 1121, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.6/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: {'3280': False} != {}
+- {'3280': False}
++ {}
+]]>		</failure>
+	</testcase>
+</testsuite>
