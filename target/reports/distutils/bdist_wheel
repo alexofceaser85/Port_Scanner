@@ -1,5 +1,6 @@
 WARNING: '.' not a valid package name; please use only .-separated package names in setup.py
 running clean
+'build/temp.linux-x86_64-3.6' does not exist -- can't clean it
 'build/lib' does not exist -- can't clean it
 'build/bdist.linux-x86_64' does not exist -- can't clean it
 'build/scripts-3.6' does not exist -- can't clean it
@@ -10,6 +11,8 @@ creating build
 creating build/lib
 copying __init__.py -> build/lib
 copying scan_utils.py -> build/lib
+not copying __init__.py (output up-to-date)
+not copying scan_utils.py (output up-to-date)
 running build_scripts
 creating build/scripts-3.6
 copying and adjusting scripts/cs3280project3.py -> build/scripts-3.6
@@ -27,9 +30,16 @@ writing cs3280project3.egg-info/PKG-INFO
 writing dependency_links to cs3280project3.egg-info/dependency_links.txt
 writing namespace_packages to cs3280project3.egg-info/namespace_packages.txt
 writing top-level names to cs3280project3.egg-info/top_level.txt
+'license_file' option was not specified
 reading manifest file 'cs3280project3.egg-info/SOURCES.txt'
 writing manifest file 'cs3280project3.egg-info/SOURCES.txt'
 Copying cs3280project3.egg-info to build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0-py3.6.egg-info
+Copying PKG-INFO to build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0-py3.6.egg-info/PKG-INFO
+Copying dependency_links.txt to build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0-py3.6.egg-info/dependency_links.txt
+Copying SOURCES.txt to build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0-py3.6.egg-info/SOURCES.txt
+Copying top_level.txt to build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0-py3.6.egg-info/top_level.txt
+Copying namespace_packages.txt to build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0-py3.6.egg-info/namespace_packages.txt
+Copying zip-safe to build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0-py3.6.egg-info/zip-safe
 running install_scripts
 creating build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0.data
 creating build/bdist.linux-x86_64/wheel/cs3280project3-1.0.dev0.data/scripts

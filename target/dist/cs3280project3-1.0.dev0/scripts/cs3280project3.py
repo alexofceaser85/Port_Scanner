@@ -3,7 +3,6 @@
 """
 This is the main method for the port scanner
 """
-import socket
 import sys
 import multiprocessing
 import scan_utils
@@ -70,7 +69,8 @@ def handle_scan_connection(ip_address, start_port, end_port, connection):
 
 if __name__ == '__main__':
     PARENT_CONNECTION, CHILD_CONNECTION = multiprocessing.Pipe()
-    PROCESSES = multiprocessing.Process(target=handle_scan_connection, args=(get_ip_address(), get_start_port(), get_end_port(), CHILD_CONNECTION, ))
+    PROCESS_ARGUMENTS = (get_ip_address(), get_start_port(), get_end_port(), CHILD_CONNECTION, )
+    PROCESSES = multiprocessing.Process(target=handle_scan_connection, args=(PROCESS_ARGUMENTS))
     PROCESSES.start()
     PROCESSES.join()
     OUTPUT = PARENT_CONNECTION.recv()
