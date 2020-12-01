@@ -43,17 +43,3 @@ def scan(ip_address, start_port, end_port):
         process.join()
 
     return dict(PORTS)
-
-def handle_scan_connection(ip_address, start_port, end_port, connection):
-    """
-    Gets the parameters for the scan function, calls the scan function, and sends the output of
-    the scan function to the main method via a pipe. If the any of the parameters are equal to
-    None then the function does not call the scan function and sends a None type to the main method
-    """
-
-    if ip_address != None and start_port != None:
-        scanned_ports = scan(ip_address, start_port, end_port)
-        connection.send(scanned_ports)
-    else:
-        connection.send(None)
-

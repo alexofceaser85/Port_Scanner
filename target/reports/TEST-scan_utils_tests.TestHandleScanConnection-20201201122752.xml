@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="scan_utils_tests.py" name="scan_utils_tests.TestHandleScanConnection-20201201122752" skipped="0" tests="8" time="7.235" timestamp="2020-12-01T12:28:01">
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_many_closed_ports" time="1.778" timestamp="2020-12-01T12:27:55"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_many_open_ports" time="1.128" timestamp="2020-12-01T12:27:56"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_one_closed_port" time="0.872" timestamp="2020-12-01T12:27:57"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_one_open_port" time="0.880" timestamp="2020-12-01T12:27:58"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_scan_some_open_ports" time="1.748" timestamp="2020-12-01T12:28:00"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_should_not_scan_with_ip_address_and_start_port_of_type_none" time="0.271" timestamp="2020-12-01T12:28:00"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_should_not_scan_with_ip_address_of_type_none" time="0.273" timestamp="2020-12-01T12:28:00"/>
+	<testcase classname="scan_utils_tests.TestHandleScanConnection" name="test_should_not_scan_with_start_port_of_type_none" time="0.284" timestamp="2020-12-01T12:28:01"/>
+</testsuite>

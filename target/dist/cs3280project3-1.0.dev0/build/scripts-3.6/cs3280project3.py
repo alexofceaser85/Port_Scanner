@@ -54,9 +54,23 @@ def get_end_port():
         print('There is an invalid value for the ending port, please only include integers')
         return None
 
+
+def handle_scan_connection(ip_address, start_port, end_port, connection):
+    """
+    Gets the parameters for the scan function, calls the scan function, and sends the output of
+    the scan function to the main method via a pipe. If the any of the parameters are equal to
+    None then the function does not call the scan function and sends a None type to the main method
+    """
+
+    if ip_address is not None and start_port is not None:
+        scanned_ports = scan_utils.scan(ip_address, start_port, end_port)
+        connection.send(scanned_ports)
+    else:
+        connection.send(None)
+
 if __name__ == '__main__':
     PARENT_CONNECTION, CHILD_CONNECTION = multiprocessing.Pipe()
-    PROCESSES = multiprocessing.Process(target=scan_utils.handle_scan_connection, args=(get_ip_address(), get_start_port(), get_end_port(), CHILD_CONNECTION, ))
+    PROCESSES = multiprocessing.Process(target=handle_scan_connection, args=(get_ip_address(), get_start_port(), get_end_port(), CHILD_CONNECTION, ))
     PROCESSES.start()
     PROCESSES.join()
     OUTPUT = PARENT_CONNECTION.recv()
